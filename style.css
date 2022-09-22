@@ -1,0 +1,263 @@
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #0a3d62;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    header {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    header img {
+        width: 10rem;
+        height: auto;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        animation: pulse 1s infinite;
+        -webkit-animation: pulse 1s infinite;
+    }
+    
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+        }
+        100% {
+            box-shadow: 0 0 0 30px rgb(0, 0, 0, 0);
+        }
+    }
+    
+    header h3 {
+        color: white;
+        margin: 1.5rem 0;
+        letter-spacing: 0.2rem;
+        font-size: 1.5rem;
+    }
+    
+    header p {
+        color: white;
+    }
+    
+    .arrow {
+        color: white;
+        margin-top: 5rem;
+        font-size: 5rem;
+        animation: arrow 2s ease-in-out infinite;
+        -webkit-animation: arrow 2s ease-in-out infinite;
+    }
+    
+    @keyframes arrow {
+        0% {
+            color: #3c6382;
+        }
+        50% {
+            color: #0a3d62;
+        }
+        100% {
+            color: #3c6382;
+        }
+    }
+    
+    .container {
+        width: 100%;
+        min-height: 150vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.8fr o.2fr;
+        gap: 1rem;
+        grid-template-areas: "profile profile skills skills" "education education education language" "contact projects projects projects" "footer footer footer footer";
+        padding: 2rem;
+    }
+    
+    .profile {
+        background: bisque;
+        color: black;
+        padding: 2rem;
+        grid-area: profile;
+    }
+    
+    .skills {
+        background: #3c6382;
+        color: bisque;
+        padding: 2rem;
+        grid-area: skills;
+    }
+    
+    .education {
+        background: #3c6382;
+        color: bisque;
+        padding: 2rem;
+        grid-area: education;
+    }
+    
+    .language {
+        background: bisque;
+        color: #0a3d62;
+        padding: 2rem;
+        grid-area: language;
+    }
+    
+    .contact {
+        background: bisque;
+        color: #013d62;
+        padding: 2rem;
+        grid-area: contact;
+    }
+    
+    .projects {
+        background: #3c6382;
+        color: bisque;
+        padding: 2rem;
+        grid-area: projects;
+    }
+    
+    footer {
+        background: #3c6382;
+        color: bisque;
+        padding: 2rem;
+        grid-area: footer;
+    }
+    
+    h2 {
+        margin-bottom: 1rem;
+    }
+    
+    .profile p {
+        padding: 0.3rem 1rem;
+        text-align: justify;
+        line-height: 2.2rem;
+    }
+    
+    .profile a {
+        text-decoration: none;
+        padding: 0.5rem 0.7rem;
+        background: #0a3d62;
+        color: beige;
+    }
+    
+    .skills div {
+        width: 100%;
+        padding: 1.5rem 1rem;
+    }
+    
+    .skills div progress[value] {
+        width: 100%;
+        height: 1rem;
+    }
+    
+    .education h2 {
+        letter-spacing: 0.1rem;
+    }
+    
+    .education h3 {
+        margin-bottom: 0.3rem;
+        letter-spacing: 0.1rem;
+        color: grey;
+    }
+    
+    .education p {
+        padding: 0.3rem 1rem;
+        text-align: justify;
+        line-height: 2.2rem;
+    }
+    
+    .education a {
+        text-decoration: none;
+        padding: 0.5rem 0.7rem;
+        background: grey;
+        color: beige;
+        font-weight: bold;
+        border-radius: 20rem;
+        -webkit-border-radius: 20rem;
+        -moz-border-radius: 20rem;
+        -ms-border-radius: 20rem;
+        -o-border-radius: 20rem;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+    
+    .education a:hover {
+        background: teal;
+        color: grey;
+    }
+    
+    .language ul {
+        margin: 1rem 0;
+        padding: 0.3rem 1rem;
+        color: grey;
+    }
+    
+    .language ul li {
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: #013d62;
+    }
+    
+    .contact div i {
+        margin-right: 0.2rem;
+    }
+    
+    .contact p {
+        margin: 1rem 0;
+        cursor: pointer;
+    }
+    
+    .projects p {
+        padding: 0.3rem 1rem;
+        text-align: justify;
+        line-height: 2.2rem;
+    }
+    
+    footer i {
+        background: bisque;
+        color: black;
+        padding: 0.5rem;
+        margin: 1rem o.5rem;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        transition: 0.4s;
+        -webkit-transition: 0.4s;
+        -moz-transition: 0.4s;
+        -ms-transition: 0.4s;
+        -o-transition: 0.4s;
+    }
+    
+    footer i:hover {
+        background: #0a3d62;
+        color: bisque;
+        cursor: pointer;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    @media only screen and (max-width:770px) {
+        .container {
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.8fr 0.6fr 1fr 0.6fr 0.5fr 0.8fr 0.1fr;
+            grid-template-areas: "profile" "skills" "education" "language" "contact" "projects" "footer";
+        }
+    }
