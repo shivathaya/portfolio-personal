@@ -98,6 +98,12 @@
         padding: 2rem;
         grid-area: skills;
     }
+    .experience {
+        background: #3c6382;
+        color: bisque;
+        padding: 2rem;
+        grid-area: experience;
+    }
     
     .education {
         background: #3c6382;
